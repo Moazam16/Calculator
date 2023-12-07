@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="calculator">
+            <table>
+                <input type="text" name="" id="input">
+                <br>
+                <br>
+                <tr>
+                    <td onclick="square()">
+                        <button>x<sup>2</sup></button>
+                    </td>
+                    <td onclick="enterData('%')">
+                        <button>%</button>
+                    </td>
+                    <td onclick="enterData('00')">
+                        <button>00</button>
+                    </td>
+                    <td onclick="enterData('/')">
+                        <button id="operator">/</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="enterData(7)">
+                        <button>7</button>
+                    </td>
+                    <td onclick="enterData(8)">
+                        <button>8</button>
+
+                    </td>
+                    <td onclick="enterData(9)">
+                        <button>9</button>
+
+                    </td>
+                    <td onclick="enterData('*')">
+                        <button id="operator">*</button>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="enterData(4)">
+                        <button>4</button>
+                    </td>
+                    <td onclick="enterData(5)">
+                        <button>5</button>
+                    </td>
+                    <td onclick="enterData(6)">
+                        <button>6</button>
+                    </td>
+                    <td onclick="enterData('-')">
+                        <button id="operator">-</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="enterData(1)">
+                        <button>1</button>
+                    </td>
+                    <td onclick="enterData(2)">
+                        <button>2</button>
+                    </td>
+                    <td onclick="enterData(3)">
+                        <button>3</button>
+                    </td>
+                    <td onclick="enterData('+')">
+                        <button id="operator">+</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td onclick="del() ">
+                        <button id="clear">C</button>
+                    </td>
+                    <td onclick="enterData(0)">
+                        <button>0</button>
+                    </td>
+
+                    <td onclick="enterData('.')">
+                        <button id="point">.</button>
+                    </td>
+                    <td onclick="calculateData()">
+                        <button id="equal">=</button>
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
